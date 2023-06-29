@@ -1,0 +1,136 @@
+input:focus{
+    outline: 0;
+}
+body {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+    background-color: #303030;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    gap: 30px;
+}
+#Title{
+    font-size: 35px;
+    background-color: #4AC9FF;
+    color: #303030;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#score-div{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    font-size: 40px;
+}
+input{
+    font-size: 26px;
+    width: 170px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #404040;
+    border: 0;
+    padding: 12px;
+    border-radius: 30px;
+}
+input::placeholder{
+    color: #FFFFFF;
+    font-weight: 200;
+}
+#score{
+    background-color: #222222;
+    color: #4AC9FF;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+/* img{
+    height: 30px;
+} */
+.input-spot{
+    
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+#inputs{
+    display: grid;
+    width: 35vw;
+    height: 35vw;
+    grid-template-columns: auto auto auto;
+    gap: 17px;
+}
+.input-spot{
+    background-color: #222222;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#controls{
+    display: flex;
+    gap: 60px;
+}
+button{
+    height: 70px;
+    border: 0;
+    border-radius: 20px;
+}
+#play-button:active{
+    border: 3px solid #497e48;
+    background-color: #73c271;
+}
+#reset-button:active{
+    border: 3px solid #893c3c;
+    background-color: #ac4c4c;
+} 
+#swap-button:active{
+    border: 5px solid #242424;
+    background-color: #000000;
+}
+#play-button{
+    width: 240px;
+    background-color: #91F28F;
+
+    color: #303030;
+    font-weight: 600;
+    font-size: 25px;
+    border: 5px solid transparent;
+}
+#reset-button{
+    width: 240px;
+    background-color: #E07474;
+
+    color: #303030;
+    font-weight: 600;
+    font-size: 25px;
+    border: 5px solid transparent;
+}
+#swap-button{
+    display: flex;
+    height: 70px;
+    width: 80px;
+    border: 0;
+    border-radius: 20px;
+
+    background-color: #242424;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+}
+
+.input-spot, #play-button, #swap-button, #reset-button{
+    cursor: pointer;
+}
